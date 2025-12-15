@@ -29,6 +29,11 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
+      # NEW STEP: Run Automated Tests
+      - name: Run Automated Tests
+        run: npm test
+
       # Step 4: Run the build command defined in package.json
       - name: Run Build
         run: npm run build
+
