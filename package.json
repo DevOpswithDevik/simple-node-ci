@@ -3,11 +3,9 @@
   "version": "1.0.0",
   "description": "Basic app for CI testing",
   "main": "index.js",
-  
-"scripts": {
-    "test": "echo 'Running Mock Unit Tests... All 5 tests passed!' && exit 0",
+  "scripts": {
     "build": "echo 'Project Built Successfully' && exit 0"
-},
+  },
   "author": "",
   "license": "ISC"
 }
