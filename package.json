@@ -1,0 +1,11 @@
+{
+  "name": "simple-node-ci",
+  "version": "1.0.0",
+  "description": "Basic app for CI testing",
+  "main": "index.js",
+  "scripts": {
+    "build": "echo 'Project Built Successfully' && exit 0"
+  },
+  "author": "",
+  "license": "ISC"
+}
