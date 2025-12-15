@@ -37,3 +37,14 @@ jobs:
       - name: Run Build
         run: npm run build
 
+      # NEW STEP: Archive and Upload the Built Code as a Deployable Artifact
+      - name: Archive Production Artifact
+        uses: actions/upload-artifact@v4 # Action to upload files
+        with:
+           name: web-app-package-${{ github.sha }} # Unique name for the package
+           path: .
+              # Exclude the heavy node_modules directory from the final deployable artifact
+              # Note: For production use, you would typically run a dedicated build step 
+              # that includes only the necessary files.
+           retention-days: 5  
+
